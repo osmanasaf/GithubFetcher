@@ -1,10 +1,7 @@
-package data;
+package com.hitit.demo.data.entity;
 
-import data.base.BaseEntity;
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.OneToMany;
+import com.hitit.demo.data.base.BaseEntity;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,6 +11,7 @@ import java.util.List;
 @Entity
 @Getter
 @Setter
+@Table(name = "user_table")
 public class User extends BaseEntity {
 
     private String username;

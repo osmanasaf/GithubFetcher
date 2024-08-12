@@ -1,6 +1,6 @@
-package data;
+package com.hitit.demo.data.entity;
 
-import data.base.BaseEntity;
+import com.hitit.demo.data.base.BaseEntity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.JoinColumn;

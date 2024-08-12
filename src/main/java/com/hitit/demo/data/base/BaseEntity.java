@@ -1,4 +1,4 @@
-package data.base;
+package com.hitit.demo.data.base;
 
 import jakarta.persistence.*;
 
