@@ -14,7 +14,6 @@ import org.springframework.web.reactive.function.client.WebClient;
 import java.util.List;
 
 @Component
-@PropertySource("application.properties")
 public class GitHubClient {
 
     private final WebClient webClient;
