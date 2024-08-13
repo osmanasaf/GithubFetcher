@@ -1,4 +1,5 @@
 **Apache Repositories Data Collector**
+
 This project is a Java application that uses the GitHub API to find the top 5 repositories of the Apache organization based on the stargazer count. The application retrieves the 100 most recently updated repositories, selects the top 5 based on the number of stargazers, and then fetches the top 10 contributors for each of these repositories. The collected data is then saved to an H2 database.
 
 **Features**
@@ -11,7 +12,7 @@ Offers an API endpoint to trigger the data collection task.
 application.properties
 You need to configure the GitHub API token in the src/main/resources/application.properties file. To do this, add the following line:
 
-`**github.api.token=your_github_api_token_here**`
+`github.api.token=your_github_api_token_here`
 
 Note: It is crucial to provide a valid GitHub API token in the application.properties file to avoid hitting the API rate limits, which could result in a "maximum API call limit exceeded" error. The GitHub API has a rate limit of 60 requests per hour for unauthenticated requests, and 5000 requests per hour for authenticated requests.
 
