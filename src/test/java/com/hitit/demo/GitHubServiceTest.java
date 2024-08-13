@@ -4,7 +4,7 @@ import com.hitit.demo.data.entity.Repository;
 import com.hitit.demo.data.response.ContributorResponse;
 import com.hitit.demo.data.response.RepositoryResponse;
 import com.hitit.demo.service.ContributorService;
-import com.hitit.demo.service.GitHubRepositoryService;
+import com.hitit.demo.service.RepositoryService;
 import com.hitit.demo.service.GitHubService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -13,16 +13,14 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.PriorityQueue;
 
 import static org.mockito.Mockito.*;
 
 class GitHubServiceTest {
 
     @Mock
-    private GitHubRepositoryService gitHubRepositoryService;
+    private RepositoryService gitHubRepositoryService;
 
     @Mock
     private ContributorService contributorService;

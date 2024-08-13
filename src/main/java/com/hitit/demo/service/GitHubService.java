@@ -14,11 +14,11 @@ import java.util.PriorityQueue;
 @Service
 public class GitHubService {
 
-    private final GitHubRepositoryService gitHubRepositoryService;
+    private final RepositoryService gitHubRepositoryService;
     private final ContributorService contributorService;
 
     @Autowired
-    public GitHubService(GitHubRepositoryService gitHubRepositoryService,
+    public GitHubService(RepositoryService gitHubRepositoryService,
                          ContributorService contributorService) {
         this.gitHubRepositoryService = gitHubRepositoryService;
         this.contributorService = contributorService;

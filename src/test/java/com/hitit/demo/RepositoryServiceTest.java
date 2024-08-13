@@ -5,7 +5,7 @@ import com.hitit.demo.data.response.RepositoryResponse;
 import com.hitit.demo.mapper.RepositoryMapper;
 import com.hitit.demo.repository.RepositoryRepository;
 import com.hitit.demo.service.GitHubClient;
-import com.hitit.demo.service.GitHubRepositoryService;
+import com.hitit.demo.service.RepositoryService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -17,7 +17,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
-class GitHubRepositoryServiceTest {
+class RepositoryServiceTest {
 
     @Mock
     private GitHubClient gitHubClient;
@@ -29,7 +29,7 @@ class GitHubRepositoryServiceTest {
     private RepositoryMapper repositoryMapper;
 
     @InjectMocks
-    private GitHubRepositoryService gitHubRepositoryService;
+    private RepositoryService gitHubRepositoryService;
 
     @BeforeEach
     void setUp() {

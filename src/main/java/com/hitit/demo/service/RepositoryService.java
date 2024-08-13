@@ -11,16 +11,16 @@ import com.hitit.demo.repository.RepositoryRepository;
 import java.util.List;
 
 @Service
-public class GitHubRepositoryService {
+public class RepositoryService {
 
     private final GitHubClient gitHubClient;
     private final RepositoryRepository repositoryRepository;
     private final RepositoryMapper repositoryMapper;
 
     @Autowired
-    public GitHubRepositoryService(GitHubClient gitHubClient,
-                                   RepositoryRepository repositoryRepository,
-                                   RepositoryMapper repositoryMapper) {
+    public RepositoryService(GitHubClient gitHubClient,
+                             RepositoryRepository repositoryRepository,
+                             RepositoryMapper repositoryMapper) {
         this.gitHubClient = gitHubClient;
         this.repositoryRepository = repositoryRepository;
         this.repositoryMapper = repositoryMapper;
